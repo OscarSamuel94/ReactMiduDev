@@ -1,0 +1,70 @@
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #222;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.profile-twitterCard {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.header-twitterCard {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.avatar-twitterCard {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.data-twitterCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0.3rem;
+}
+.data-twitterCard strong {
+  overflow: hidden;
+}
+
+.data-twitterCard span {
+  font-size: 0.6rem;
+}
+.btn-twitterCard {
+  transition: background-color 0.3s ease-in, transform 0.2s ease;
+  border-radius: 2rem;
+  border: none;
+  background-color: #ddd;
+  padding: 0.3rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-twitterCard:hover {
+  transform: scale(1.03);
+}
+
+.btn-twitterCard.is-following {
+  background-color: #222;
+  color: #ffffff;
+  border: 1px solid #ddd;
+}
